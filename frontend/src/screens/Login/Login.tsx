@@ -1,6 +1,6 @@
 import TextInputField from '../../components/TextInputField/TextInputField';
+import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
 import './Login.scss';
-import { TextField, Grid, Button } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import LockIcon from '@mui/icons-material/Lock';
 
@@ -8,26 +8,31 @@ function Login() {
     return (
         <>
             <div className='root-container'>
+                <div>
+                    <h2 className='text'>Welcome to Barter Bank !</h2>
+                </div>
+
                 <div className='sub-container'>
                     <div>
-                        <h3 className='text'>Welcome to Barter Bank !</h3>
+                        <h2 className='text'>Sign in</h2>
                     </div>
                     <div className='text-field'>
                         <TextInputField
                             icon={<PersonIcon fontSize='small' />}
                             label={"Username"}
-                        ></TextInputField>
+                        />
                     </div>
                     <div className='text-field'>
                         <TextInputField
                             icon={<LockIcon fontSize='small' />}
                             label={"Password"}
-                        ></TextInputField>
+                        />
                     </div>
                     <div className='button-container'>
-                        <Button variant="contained">Login</Button>
+                        <SubmitButton text={"Sign in"} />
                     </div>
                 </div>
+
             </div>
         </>
     );
