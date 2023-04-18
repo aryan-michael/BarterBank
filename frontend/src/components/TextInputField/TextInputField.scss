@@ -1,0 +1,10 @@
+.root-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    #outlined-basic {
+        width: 400px;
+    }
+}
