@@ -1,4 +1,20 @@
 .root-container {
-    text-align: center;
-    background-color: pink;
+
+    .sub-container {
+        .text-field {
+            padding: 1rem;
+            justify-content: center;
+
+            .icon {
+                margin-top: 0.7rem;
+                margin-right: 0.7rem;
+
+            }
+        }
+
+        .text {
+            font-size: x-large;
+        }
+    }
+
 }
