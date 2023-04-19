@@ -5,7 +5,7 @@ function Home() {
     return (
         <>
             <div className='root-container'>
-                <Link to={`/login`}>
+                <Link to={`/login/user-id`}>
                     <h1>Login</h1>
                 </Link>
             </div>
