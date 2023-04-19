@@ -34,15 +34,14 @@ function UserID() {
                                 type={"text"}
                             />
                         </div>
-                        {/* <div className='text-field'>
-                            <TextInputField
-                                icon={<LockIcon fontSize='small' />}
-                                label={"Password"}
-                            />
-                        </div> */}
+
                         <div className='submit-button-container' onClick={handleClick}>
                             <SubmitButton text={"Continue"} />
                         </div>
+                        
+                        <div className="t-c">
+		                    <p>By continuing, you agree to BarterBank's' Terms & Conditions.</p>
+		                </div>
                     </div>
 
                     <div className="divider">
@@ -52,7 +51,8 @@ function UserID() {
 
                 <div className='registration-button'>
                     <RegistrationButton text={"Create your BarterBank account"} />
-                </div>
+                </div>  
+         
             </div>
 
             <Divider style={{ padding: "1rem" }} />
