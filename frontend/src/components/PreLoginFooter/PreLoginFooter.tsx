@@ -12,10 +12,16 @@ const PreLoginFooter = (props: Props) => {
     return (
         <>
             <div className='footer-container' style={props.style}>
-                <div className='chip-1'><a href="/contact-us"><Chip className='chip-1' icon={<PermContactCalendarIcon style={{ color: "#1565c0" }} />} label="Contact Us" /></a></div>
-                <div className='chip-2'><a href="/terms&conditions"><Chip className='chip-2' icon={<GavelIcon style={{ color: "#1565c0" }} />} label="Terms & Condtions" /></a></div>
-                <div className='chip-3'><a href="/help-desk"><Chip className='chip-3' icon={<AccessibilityNewIcon style={{ color: "#1565c0" }} />} label="Need Help?" /></a></div>
-            </div>
+		        <div className="footer-chips">
+		        	<div className='chip-1'><a href="/contact-us"><Chip className='chip-1' icon={<PermContactCalendarIcon />} label="Contact Us" /></a></div>
+		            <div className='chip-2'><a href="/terms&conditions"><Chip className='chip-2' icon={<GavelIcon />} label="Terms & Condtions" /></a></div>
+		            <div className='chip-3'><a href="/help-desk"><Chip className='chip-3' icon={<AccessibilityNewIcon />} label="Need Help?" /></a></div>
+		        </div>
+		        <div className="footer-date">
+		            &copy; {new Date().getFullYear()} 
+		            {" "}Copyright of BarterBank.com, Inc.
+		        </div>
+            </div>   
         </>
     )
 }

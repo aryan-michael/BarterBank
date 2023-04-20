@@ -3,18 +3,10 @@ import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
 import Divider from '@mui/material/Divider';
 import './ForgotPassword.scss';
 import PersonIcon from '@mui/icons-material/Person';
-import { useState } from 'react';
 import logo from '../../images/BarterBank.png';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 
 function ForgotPassword() {
-
-    const [show, setShow] = useState(false);
-
-    const handleChange = () => {
-        console.log("aankh pe click kiya");
-        setShow(!show);
-    }
 
     return (
         <>

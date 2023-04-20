@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './screens/Home/Home';
+import CreateAccount from './screens/CreateAccount/CreateAccount';
 import UserID from './screens/Login/UserID';
 import Password from './screens/Login/Password';
 import ForgotPassword from './screens/Login/ForgotPassword';
@@ -12,6 +13,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/create-account' element={<CreateAccount />} />
         <Route path='/login/user-id' element={<UserID />} />
         <Route path='/login/password' element={<Password />} />
         <Route path='/login/password/forgot-password' element={<ForgotPassword />} />

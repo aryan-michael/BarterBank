@@ -7,8 +7,6 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../images/BarterBank.png';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 

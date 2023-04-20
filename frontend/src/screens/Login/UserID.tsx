@@ -11,6 +11,10 @@ import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 function UserID() {
 
     const navigate = useNavigate()
+    
+    const handleRegistration = () => {
+    	navigate(`/create-account`);
+    }
 
     const handleClick = () => {
         navigate(`/login/password`);
@@ -52,7 +56,7 @@ function UserID() {
                 </div>
 
                 <div className='registration-button'>
-                    <RegistrationButton text={"Create your BarterBank account"} />
+                    <RegistrationButton onClick={handleRegistration} text={"Create your BarterBank account"} />
                 </div>
 
             </div>
