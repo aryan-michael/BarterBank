@@ -4,8 +4,9 @@ import RegistrationButton from '../../components/Buttons/Register/RegistrationBu
 import Divider from '@mui/material/Divider';
 import './UserID.scss';
 import PersonIcon from '@mui/icons-material/Person';
-import LockIcon from '@mui/icons-material/Lock';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../images/BarterBank.png';
+import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 
 function UserID() {
 
@@ -18,8 +19,9 @@ function UserID() {
     return (
         <>
             <div className='user-id-container'>
-                <div>
-                    <h2 className='text'>Welcome to Barter Bank !</h2>
+
+                <div className='logo'>
+                    <img src={logo} alt="company logo" />
                 </div>
 
                 <div className='sub-user-id-container'>
@@ -30,7 +32,7 @@ function UserID() {
                         <div className='text-field'>
                             <TextInputField
                                 icon={<PersonIcon fontSize='small' />}
-                                label={"Username"}
+                                label={"Email"}
                                 type={"text"}
                             />
                         </div>
@@ -38,24 +40,28 @@ function UserID() {
                         <div className='submit-button-container' onClick={handleClick}>
                             <SubmitButton text={"Continue"} />
                         </div>
-                        
+
                         <div className="t-c">
-		                    <p>By continuing, you agree to BarterBank's' Terms & Conditions.</p>
-		                </div>
+                            <p>By continuing, you agree to BarterBank's <br /><a href="/terms&conditions" className='t-c-link'>Terms & Conditions.</a></p>
+                        </div>
                     </div>
 
-                    <div className="divider">
-                        <Divider>First time at BarterBank?</Divider>
-                    </div>
+
+                    <Divider className="divide-1">First time at BarterBank?</Divider>
+
                 </div>
 
                 <div className='registration-button'>
                     <RegistrationButton text={"Create your BarterBank account"} />
-                </div>  
-         
+                </div>
+
             </div>
 
-            <Divider style={{ padding: "1rem" }} />
+            <Divider className="divide-main" />
+
+            <div>
+                <PreLoginFooter style={{ height: "45vh" }} />
+            </div>
         </>
     );
 }

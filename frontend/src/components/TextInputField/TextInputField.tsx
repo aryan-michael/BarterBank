@@ -12,8 +12,9 @@ function TextInputField(props: Props) {
             <TextField
                 label={props.label}
                 variant="outlined"
+                size='small'
                 sx={{ m: 0.5, width: '35ch' }}
-                type={props.type}
+                type={props.type} //condition which checks the value of a checkbox
                 InputProps={{
                     endAdornment: <InputAdornment position="end">{props.icon}</InputAdornment>,
                 }}
