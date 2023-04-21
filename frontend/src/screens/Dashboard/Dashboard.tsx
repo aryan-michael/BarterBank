@@ -4,7 +4,7 @@ const Dashboard = () => {
 	return (
 		<>
 			<div className="dashboard-container">
-				Dashboard
+				Dashboard banta hu
 			</div>
 		</>
 	)
