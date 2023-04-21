@@ -1,0 +1,38 @@
+.footer-container {
+    background-color: rgb(248, 244, 244);
+    padding-top: 1rem;
+    text-align: center;
+    
+    .footer-chips {
+    
+		display: flex;
+		justify-content: center;
+    
+    	.chip-1 {
+		    padding: 0.3rem;
+		    color: #1565c0;
+		    cursor: pointer;
+		    height: fit-content;
+		}
+
+		.chip-2 {
+		    padding: 0.3rem;
+		    color: #1565c0;
+		    cursor: pointer;
+		    height: fit-content;
+		}
+
+		.chip-3 {
+		    padding: 0.3rem;
+		    color: #1565c0;
+		    cursor: pointer;
+		    height: fit-content;
+		}
+    }
+    
+    .footer-date {
+    	padding-top: 1rem;
+    	color: gray;
+    	font-size: smaller;
+    }
+}

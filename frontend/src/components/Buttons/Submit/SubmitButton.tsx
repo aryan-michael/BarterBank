@@ -9,7 +9,7 @@ function SubmitButton(props: Props) {
     return (
         <>
             <div className='submit-button'>
-                <Button variant="contained">{props.text}</Button>
+                <Button className="submit-button-component" variant="contained">{props.text}</Button>
             </div>
         </>
     )

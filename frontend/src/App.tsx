@@ -2,14 +2,24 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './screens/Home/Home';
-import Login from './screens/Login/Login';
+import Dashboard from './screens/Dashboard/Dashboard';
+import CreateAccount from './screens/CreateAccount/CreateAccount';
+import UserID from './screens/Login/UserID';
+import Password from './screens/Login/Password';
+import ForgotPassword from './screens/Login/ForgotPassword';
+import TermsConditions from './screens/Terms&Conditions/TermsConditions';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/create-account' element={<CreateAccount />} />
+        <Route path='/login/user-id' element={<UserID />} />
+        <Route path='/login/password' element={<Password />} />
+        <Route path='/login/password/forgot-password' element={<ForgotPassword />} />
+        <Route path='/terms&conditions' element={<TermsConditions />} />
       </Routes>
     </>
 
