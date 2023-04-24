@@ -29,8 +29,9 @@ function ForgotPassword() {
 
                             <TextInputField
                                 icon={<PersonIcon fontSize='small' />}
-                                label={"Email"}
+                                label={"Email or mobile number"}
                                 type={"text"}
+                                sx={{ m: 0.5, width: '35ch' }}
                             />
                         </div>
 
@@ -39,9 +40,20 @@ function ForgotPassword() {
                         </div>
                     </div>
 
+                    <div className="t-c">
+                        Has your email address or mobile number <br />changed?
+                    </div>
+
+                    <div className="t-c-left">
+                        <p>If you no longer use the email address associated with your<br />BarterBank account, you may contact <a href="/terms&conditions" className='t-c-link'>Customer Service</a> for <br />help restoring access to your account.</p>
+
+                    </div>
+
                 </div>
 
             </div>
+
+
 
             <Divider className="divide-main" />
 
