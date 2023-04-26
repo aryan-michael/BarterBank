@@ -8,6 +8,7 @@ import UserID from './screens/Login/UserID';
 import Password from './screens/Login/Password';
 import ForgotPassword from './screens/Login/ForgotPassword';
 import TermsConditions from './screens/Terms&Conditions/TermsConditions';
+import OTPVerification from './screens/CreateAccount/OTPVerification';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/create-account' element={<CreateAccount />} />
         <Route path='/login/user-id' element={<UserID />} />
         <Route path='/login/password' element={<Password />} />
+        <Route path='/login/otp-verification' element={<OTPVerification />} />
         <Route path='/login/password/forgot-password' element={<ForgotPassword />} />
         <Route path='/terms&conditions' element={<TermsConditions />} />
       </Routes>

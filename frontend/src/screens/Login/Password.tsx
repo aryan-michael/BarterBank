@@ -4,6 +4,7 @@ import Divider from '@mui/material/Divider';
 import './Password.scss';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../images/BarterBank.png';
@@ -62,19 +63,16 @@ function Password() {
                                 )}
                                 label={"Password"}
                                 type={show ? "text" : "password"}
+                                sx={{ m: 0.5, width: '35ch' }}
                             />
                             <div className='signin-checkbox'>
                                 <div className='check-box'>
                                     <Checkbox size="small" />
                                 </div>
                                 <div className='check-box-label'>
-                                    <p className='check-box-label-text'>Keep me signed in.</p>
+                                    <p className='check-box-label-text'>Keep me signed in. <a href="/terms&conditions" className='t-c-link'>Details <ArrowDropDownIcon fontSize="inherit" /></a></p>
                                 </div>
                             </div>
-
-                            {/* <FormGroup>
-                                <FormControlLabel control={<Checkbox size="small" />} label="Keep me signed in." />
-                            </FormGroup> */}
                         </div>
 
                         <div className='submit-button-container'>
@@ -89,7 +87,7 @@ function Password() {
             <Divider className="divide-main" />
 
             <div>
-                <PreLoginFooter style={{ height: "51vh" }} />
+                <PreLoginFooter />
             </div>
         </>
     );

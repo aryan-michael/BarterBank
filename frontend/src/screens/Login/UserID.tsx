@@ -4,6 +4,7 @@ import RegistrationButton from '../../components/Buttons/Register/RegistrationBu
 import Divider from '@mui/material/Divider';
 import './UserID.scss';
 import PersonIcon from '@mui/icons-material/Person';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../images/BarterBank.png';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
@@ -11,9 +12,9 @@ import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 function UserID() {
 
     const navigate = useNavigate()
-    
+
     const handleRegistration = () => {
-    	navigate(`/create-account`);
+        navigate(`/create-account`);
     }
 
     const handleClick = () => {
@@ -38,6 +39,7 @@ function UserID() {
                                 icon={<PersonIcon fontSize='small' />}
                                 label={"Email"}
                                 type={"text"}
+                                sx={{ m: 0.5, width: '35ch' }}
                             />
                         </div>
 
@@ -45,8 +47,12 @@ function UserID() {
                             <SubmitButton text={"Continue"} />
                         </div>
 
-                        <div className="t-c">
-                            <p>By continuing, you agree to BarterBank's <br /><a href="/terms&conditions" className='t-c-link'>Terms & Conditions.</a></p>
+                        <div className="t-c-left">
+                            <p>By continuing, you agree to BarterBank's <a href="/terms&conditions" className='t-c-link'>Terms & <br />Conditions.</a></p>
+                        </div>
+
+                        <div className="t-c-left">
+                            <p><a href="/login/user-id" className='t-c-link'><ArrowRightIcon fontSize="inherit" />Need Help?</a></p>
                         </div>
                     </div>
 
@@ -64,7 +70,7 @@ function UserID() {
             <Divider className="divide-main" />
 
             <div>
-                <PreLoginFooter style={{ height: "45vh" }} />
+                <PreLoginFooter />
             </div>
         </>
     );
