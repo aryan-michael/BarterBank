@@ -87,7 +87,7 @@ function Password() {
             <Divider className="divide-main" />
 
             <div>
-                <PreLoginFooter style={{ height: "51vh" }} />
+                <PreLoginFooter />
             </div>
         </>
     );

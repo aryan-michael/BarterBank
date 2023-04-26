@@ -58,7 +58,7 @@ function ForgotPassword() {
             <Divider className="divide-main" />
 
             <div>
-                <PreLoginFooter style={{ height: "55.5vh" }} />
+                <PreLoginFooter />
             </div>
         </>
     );

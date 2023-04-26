@@ -118,7 +118,7 @@ const CreateAccount = () => {
 			<Divider className="divide-main" />
 
 			<div>
-				<PreLoginFooter style={{ height: "45vh" }} />
+				<PreLoginFooter />
 			</div>
 		</>
 	)

@@ -63,7 +63,7 @@ function OTPVerification() {
             <Divider className="divide-main" />
 
             <div>
-                <PreLoginFooter style={{ height: "51vh" }} />
+                <PreLoginFooter />
             </div>
         </>
     );
