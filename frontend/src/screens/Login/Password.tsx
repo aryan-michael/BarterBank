@@ -7,7 +7,7 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBank.png';
+import logo from '../../images/BarterBankLogo.png';
 import Checkbox from '@mui/material/Checkbox';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 
@@ -33,7 +33,7 @@ function Password() {
     return (
         <>
             <div className='password-container'>
-                <div>
+                <div className='logo'>
                     <img src={logo} alt="company logo" />
                 </div>
 

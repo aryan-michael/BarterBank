@@ -3,7 +3,7 @@ import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
 import Divider from '@mui/material/Divider';
 import './ForgotPassword.scss';
 import PersonIcon from '@mui/icons-material/Person';
-import logo from '../../images/BarterBank.png';
+import logo from '../../images/BarterBankLogo.png';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 
 function ForgotPassword() {
@@ -11,7 +11,7 @@ function ForgotPassword() {
     return (
         <>
             <div className='password-container'>
-                <div>
+                <div className='logo'>
                     <img src={logo} alt="company logo" />
                 </div>
 

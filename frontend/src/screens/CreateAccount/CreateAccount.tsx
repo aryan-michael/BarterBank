@@ -10,7 +10,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBank.png';
+import logo from '../../images/BarterBankLogo.png';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 import { TextField } from '@mui/material';
 
