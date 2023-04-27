@@ -1,10 +1,10 @@
 .navbar {
-    height: 80px;
+    height: 70px;
     border-bottom: 0.4px solid lightgray;
     display: flex;
     align-items: center;
     font-size: 14px;
-    background-color: #003249;
+    background-color: #212A3E;
 
     .wrapper {
         width: 100%;
@@ -13,6 +13,10 @@
         align-items: center;
         justify-content: space-between;
 
+        .submit-button-component {
+            text-transform: none !important;
+        }
+
         .text-field {
             padding: 1rem;
         }
@@ -20,9 +24,18 @@
         .dropdowns {
             display: flex;
 
-            p {
-                padding: 10px;
+            .icon {
                 font-size: 20px;
+                color: white;
+            }
+
+            .address-link {
+                text-decoration: none;
+
+                .location {
+                    color: white;
+                    font-size: 15px;
+                }
             }
         }
 
@@ -34,6 +47,16 @@
                 display: flex;
                 align-items: center;
                 margin: 15px;
+
+                .profile-link {
+                    text-decoration: none;
+
+                    .profile {
+                        color: white;
+                        font-size: inherit;
+                        margin-left: 5px;
+                    }
+                }
 
                 .icon {
                     font-size: 30px;
