@@ -1,10 +1,16 @@
+import NavBar from '../../components/NavBar/NavBar';
 import './Dashboard.scss';
 
 const Dashboard = () => {
 	return (
 		<>
-			<div className="dashboard-container">
-				Dashboard banta hu
+			<div className="root-container">
+				<div className='nav-container'>
+					<NavBar />
+				</div>
+				<div className=''>
+
+				</div>
 			</div>
 		</>
 	)

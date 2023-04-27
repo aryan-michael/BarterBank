@@ -1,0 +1,49 @@
+.navbar {
+    height: 80px;
+    border-bottom: 0.4px solid lightgray;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #003249;
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-between;
+
+        .text-field {
+            padding: 1rem;
+        }
+
+        .dropdowns {
+            display: flex;
+
+            p {
+                padding: 10px;
+                font-size: 20px;
+            }
+        }
+
+        .items {
+            display: flex;
+            justify-content: left;
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin: 15px;
+
+                .icon {
+                    font-size: 30px;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .bottom-buttons {
+        background-color: blue;
+    }
+}
