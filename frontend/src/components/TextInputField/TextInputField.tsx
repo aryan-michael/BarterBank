@@ -1,9 +1,10 @@
 import { TextField } from '@mui/material'
 import InputAdornment from '@mui/material/InputAdornment';
 export interface Props {
-    icon: any;
-    label: string;
-    type: string;
+    icon?: any;
+    label?: string;
+    type?: string;
+    sx?: any;
 }
 
 function TextInputField(props: Props) {
@@ -13,10 +14,10 @@ function TextInputField(props: Props) {
                 label={props.label}
                 variant="outlined"
                 size='small'
-                sx={{ m: 0.5, width: '35ch' }}
+                sx={props.sx}
                 type={props.type} //condition which checks the value of a checkbox
                 InputProps={{
-                    endAdornment: <InputAdornment position="end">{props.icon}</InputAdornment>,
+                    endAdornment: <InputAdornment position="end">{props.icon}</InputAdornment>
                 }}
             />
         </div>
@@ -24,3 +25,5 @@ function TextInputField(props: Props) {
 }
 
 export default TextInputField
+
+// { m: 0.5, width: '35ch' }
