@@ -5,7 +5,7 @@ import './OTPVerification.scss';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import PinIcon from '@mui/icons-material/Pin';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBank.png';
+import logo from '../../images/BarterBankLogo.png';
 import Checkbox from '@mui/material/Checkbox';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 
@@ -16,7 +16,7 @@ function OTPVerification() {
     return (
         <>
             <div className='password-container'>
-                <div>
+                <div className='logo'>
                     <img src={logo} alt="company logo" />
                 </div>
 

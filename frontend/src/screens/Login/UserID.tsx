@@ -6,7 +6,7 @@ import './UserID.scss';
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBank.png';
+import logo from '../../images/BarterBankLogo.png';
 import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
 
 function UserID() {
