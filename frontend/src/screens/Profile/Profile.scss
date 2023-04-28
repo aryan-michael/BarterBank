@@ -1,1 +1,10 @@
-.root-container {}
+.root-container {
+    .box {
+        .box-sub {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
