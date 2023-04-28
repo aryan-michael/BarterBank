@@ -6,6 +6,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import "./ProfilePageButton.scss"
 
 export interface Props {
@@ -27,25 +28,18 @@ const bull = (
 
 export default function ProfilePageButton(props: Props) {
     return (
-        <div className='root'>
-            <a href='' style={{ textDecoration: 'none' }}>
-                <Card sx={{ width: 300, boxShadow: '6', alignItems: 'center', justifyContent: 'center' }}>
-                    <div className='sub'>
-                        <img className='image' src={props.image} alt="image" />
-                    </div>
-                    <CardContent>
-                        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                            {props.label1}
-                        </Typography>
-                        <Typography variant="h5" component="div">
-                            {props.label2}
-                        </Typography>
-                        <Typography variant="body2">
-                            {props.label3}
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </a>
-        </div>
+        <Card sx={{ width: 300, boxShadow: '6', alignItems: 'center', justifyContent: 'center', borderRadius: 2 }}>
+            <div className='sub'>
+                <img className='image' src={props.image} alt="image" />
+            </div>
+            <CardContent>
+                <div className='title'>
+                    <Typography variant="h5" component="div" className='sub-title'>
+                        {props.label2}
+                    </Typography>
+                    <ArrowForwardIcon className='icon' />
+                </div>
+            </CardContent>
+        </Card>
     );
 }
