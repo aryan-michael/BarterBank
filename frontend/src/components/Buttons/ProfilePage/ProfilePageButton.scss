@@ -1,3 +1,25 @@
-.root {
-    background-color: aqua;
+.sub {
+    align-items: center;
+    justify-content: center;
+
+    .image {
+        align-items: center;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+
+    .sub-title {
+        color: grey;
+    }
+
+    .icon {
+        padding-left: 10px;
+        margin-top: 5px;
+        color: grey;
+    }
 }

@@ -1,1 +1,12 @@
-.root-container {}
+.root-container {
+    .box {
+        .box-sub {
+            margin-left: 115px;
+            align-items: center;
+            display: grid;
+            justify-content: center;
+            gap: 2.5rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}

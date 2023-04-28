@@ -1,0 +1,38 @@
+.root {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+    .sub {
+
+        .image {
+            width: 200px;
+            height: 200px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+    }
+
+    .title {
+        justify-content: center;
+        display: contents;
+
+        .sub-title1 {
+            padding: 10px;
+        }
+
+        .sub-title2 {
+            color: grey;
+        }
+
+        .sub-title3 {
+            color: red;
+        }
+
+        .icon {
+            padding-left: 10px;
+            margin-top: 5px;
+            color: grey;
+        }
+    }
+}

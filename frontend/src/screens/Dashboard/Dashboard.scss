@@ -1,0 +1,15 @@
+.root-container {
+    justify-content: center;
+    align-items: center;
+
+    .nav-container {}
+
+    .card-container {
+        margin: 20px;
+        align-items: center;
+        display: grid;
+        justify-content: center;
+        gap: 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
