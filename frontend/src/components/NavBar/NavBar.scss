@@ -37,8 +37,42 @@
             }
         }
 
-        .text-field {
-            padding: 1rem;
+        @media only screen and (max-width: 1750px) {
+            .search-bar-component {
+                display: flex;
+
+                .search-bar {
+                    width: 50ch;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1400px) {
+            .search-bar-component {
+                display: flex;
+
+                .search-bar {
+                    width: 30ch;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .search-bar-component {
+                display: flex;
+
+                .search-bar {
+                    width: 22ch;
+                }
+            }
+        }
+
+        .search-bar {
+            padding: 3px 4px;
+            margin: 0.5;
+            width: 70ch;
+            background-color: white;
+            border-radius: 4px;
             justify-content: flex-start;
 
             .search-icon {

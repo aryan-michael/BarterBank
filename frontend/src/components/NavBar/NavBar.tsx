@@ -28,11 +28,11 @@ function NavBar() {
 
                 <div style={{ width: "100px" }} />
 
-                <div className='text-field'>
+                <div className='search-bar-component'>
                     <InputBase
                         placeholder='Search BarterBank.com'
                         type={"text"}
-                        sx={{ p: '3px 4px', m: 0.5, width: '70ch', backgroundColor: 'white', borderRadius: '4px' }}
+                        className="search-bar"
 
                     />
                     <IconButton className="search-icon" type="button" sx={{ p: '10px', color: 'white' }} aria-label="search">
