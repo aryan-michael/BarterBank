@@ -1,0 +1,24 @@
+.root-container {
+
+    .bottom-buttons {
+        background-color: #212A3E;
+        padding: 10px;
+        align-items: left !important;
+        display: flex;
+
+        .link {
+            text-decoration: none;
+        }
+
+        .spans {
+            color: white;
+            padding: 0px 20px 2px;
+            justify-content: space-between;
+
+            &:hover {
+                border: 2px solid white;
+                border-radius: 1;
+            }
+        }
+    }
+}

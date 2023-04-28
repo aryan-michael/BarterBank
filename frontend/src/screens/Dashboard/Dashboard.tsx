@@ -1,5 +1,5 @@
 import NavBar from '../../components/NavBar/NavBar';
-import './Dashboard.scss';
+import NavBar2 from '../../components/NavBar2/NavBar2';
 
 const Dashboard = () => {
 	return (
@@ -8,14 +8,8 @@ const Dashboard = () => {
 				<div className='nav-container'>
 					<NavBar />
 				</div>
-				<div className='bottom-buttons'>
-					<a href='' className='link'> <span className='spans'>Best Sellers</span></a>
-					<a href='' className='link'> <span className='spans'>Deals</span></a>
-					<a href='' className='link'> <span className='spans'>Customer Service</span></a>
-					<a href='' className='link'> <span className='spans'>Coupons</span></a>
-				</div>
-				<div className=''>
-
+				<div className='nav-container'>
+					<NavBar2 />
 				</div>
 			</div>
 		</>

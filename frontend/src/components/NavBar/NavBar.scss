@@ -13,16 +13,14 @@
         align-items: center;
         justify-content: space-between;
 
-        .submit-button-component {
-            text-transform: none !important;
-        }
-
-        .text-field {
-            padding: 1rem;
-        }
-
         .dropdowns {
             display: flex;
+            padding: 0.5rem;
+
+            &:hover {
+                border: 1px solid white;
+                border-radius: 5px;
+            }
 
             .icon {
                 font-size: 20px;
@@ -39,14 +37,40 @@
             }
         }
 
+        .text-field {
+            padding: 1rem;
+            justify-content: flex-start;
+
+            .search-icon {
+                &:hover {
+                    border: 1px solid white;
+                    border-radius: 1;
+                }
+            }
+        }
+
         .items {
             display: flex;
-            justify-content: left;
+            justify-content: flex-end;
 
             .item {
                 display: flex;
                 align-items: center;
                 margin: 15px;
+
+                &:hover {
+                    border: 1px solid white;
+                    border-radius: 5px;
+                }
+
+                .submit-button-component {
+                    text-transform: none !important;
+                }
+
+                .icon {
+                    font-size: 30px;
+                    color: white;
+                }
 
                 .profile-link {
                     text-decoration: none;
@@ -55,18 +79,139 @@
                         color: white;
                         font-size: inherit;
                         margin-left: 5px;
+                        padding: 0.5rem;
                     }
-                }
-
-                .icon {
-                    font-size: 30px;
-                    color: white;
                 }
             }
         }
     }
-
-    .bottom-buttons {
-        background-color: blue;
-    }
 }
+
+
+
+
+
+
+
+
+// .navbar {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 10px;
+//     background-color: #333;
+//     color: white;
+//     font-size: 16px;
+
+//     .logo {
+//         display: flex;
+//         align-items: center;
+
+//         // img {
+//         //     width: 50px;
+//         //     height: 50px;
+//         // }
+//     }
+
+//     .dropdowns {
+//         display: flex;
+//         align-items: center;
+//         text-decoration: none;
+//         color: white;
+
+//         .location {
+//             margin-left: 5px;
+//         font-weight: bold;
+//     }
+// }
+
+// .text-field {
+//     display: flex;
+//     align-items: center;
+
+//     .MuiInputBase-root {
+//         color: black;
+//     }
+
+//     input {
+//         border: none;
+//         outline: none;
+//         margin-left: 5px;
+//         font-size: 16px;
+//     }
+
+//     .search-icon {
+//         background-color: #FFC107;
+//         margin-left: 5px;
+
+//         &:hover {
+//             background-color: #F57C00;
+//         }
+//     }
+// }
+
+// .items {
+//     display: flex;
+//     align-items: center;
+
+//     .item {
+//         margin-left: 10px;
+//         text-decoration: none;
+//         color: white;
+//         margin-bottom: 5px;
+
+//         &:hover {
+//             background-color: #F57C00;
+//             border: 2px solid white;
+//             border-radius: 10px;
+//         }
+//     }
+
+// .dropdowns {
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+//     color: white;
+
+//     .location {
+//         margin-left: 5px;
+//         font-weight: bold;
+//     }
+// }
+
+//         .submit-button-component {
+//             text-transform: none;
+//             font-size: 16px;
+
+//             &:hover {
+//                 background-color: #F57C00;
+//             }
+//         }
+
+//         .icon {
+//             font-size: 30px;
+//             color: white;
+//         }
+
+//         .profile-link {
+//             text-decoration: none;
+//             color: white;
+//         }
+
+//         .profile {
+//             font-size: 16px;
+//             margin-left: 5px;
+//         }
+//     }
+
+//     // add this code to move the items div to the right
+//     &>.wrapper {
+//         display: flex;
+//         justify-content: space-between;
+//         width: 100%;
+
+//         .items {
+//             margin-left: auto;
+//         }
+//     }
+// }
