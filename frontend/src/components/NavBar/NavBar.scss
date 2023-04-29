@@ -37,6 +37,16 @@
             }
         }
 
+        @media only screen and (max-width: 1900px) {
+            .search-bar-component {
+                display: flex;
+
+                .search-bar {
+                    width: 70ch;
+                }
+            }
+        }
+
         @media only screen and (max-width: 1750px) {
             .search-bar-component {
                 display: flex;
@@ -67,20 +77,24 @@
             }
         }
 
+        .search-bar-component {
+            .search-icon {
+                margin-left: 2px;
+
+                &:hover {
+                    border: 1px solid white;
+                    background-color: orange;
+                }
+            }
+        }
+
         .search-bar {
             padding: 3px 4px;
             margin: 0.5;
-            width: 70ch;
+            width: 90ch;
             background-color: white;
             border-radius: 4px;
             justify-content: flex-start;
-
-            .search-icon {
-                &:hover {
-                    border: 1px solid white;
-                    border-radius: 1;
-                }
-            }
         }
 
         .items {
@@ -112,8 +126,8 @@
                     .profile {
                         color: white;
                         font-size: inherit;
-                        margin-left: 5px;
-                        padding: 0.5rem;
+                        margin-left: 3px;
+                        //padding: 0.5rem;
                     }
                 }
             }

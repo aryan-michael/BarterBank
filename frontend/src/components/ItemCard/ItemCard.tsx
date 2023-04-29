@@ -22,7 +22,7 @@ const bull = (
 );
 export default function ItemCard(props: Props) {
     return (
-        <Card sx={{ width: 450, boxShadow: '6', alignItems: 'center', justifyContent: 'center', borderRadius: 2 }}>
+        <Card sx={{ width: 550, boxShadow: '6', alignItems: 'center', justifyContent: 'center', borderRadius: 2 }}>
             <div className='root'>
                 <div className='sub'>
                     <img className='image' src={props.image} alt="image" />

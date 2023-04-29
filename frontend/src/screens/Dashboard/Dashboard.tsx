@@ -18,6 +18,24 @@ const Dashboard = () => {
 					<ItemCard
 						image={pipes}
 						label1='Favda'
+						label2='Favda ka Description ajkbfkjG:LNSG sokneg; slgn;lngsng slnglsrn;gln'
+						label3='5000'
+					/>
+					<ItemCard
+						image={pipes}
+						label1='Favda'
+						label2='Favda ka Description'
+						label3='5000'
+					/>
+					<ItemCard
+						image={pipes}
+						label1='Favda'
+						label2='Favda ka Description'
+						label3='5000'
+					/>
+					<ItemCard
+						image={pipes}
+						label1='Favda'
 						label2='Favda ka Description'
 						label3='5000'
 					/>

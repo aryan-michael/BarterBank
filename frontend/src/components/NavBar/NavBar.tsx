@@ -7,13 +7,25 @@ import { Button } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
+import { useNavigate } from "react-router-dom";
 
 
 function NavBar() {
+
+    const navigate = useNavigate()
+
+    const handleAccount = () => {
+        navigate(`/login/user-id`);
+    }
+
+    const handleLogo = () => {
+        navigate(`/dashboard`);
+    }
+
     return (
         <div className='navbar'>
             <div className="wrapper">
-                <div className='logo'>
+                <div onClick={handleLogo} className='logo'>
                     <img src={logo} alt="company logo" />
                 </div>
 
@@ -33,7 +45,6 @@ function NavBar() {
                         placeholder='Search BarterBank.com'
                         type={"text"}
                         className="search-bar"
-
                     />
                     <IconButton className="search-icon" type="button" sx={{ p: '10px', color: 'white' }} aria-label="search">
                         <SearchIcon />
@@ -51,12 +62,15 @@ function NavBar() {
                         <ShoppingCartIcon className='icon' />
                     </div>
 
-                    <div className="item">
+                    <div onClick={handleAccount} className="item">
+                        <Button className="submit-button-component" variant='text' style={{ color: 'white' }}>Hello, Sign in</Button>
+                    </div>
+                    {/* <div className="item">
                         <AccountCircleIcon className='icon' />
                         <a href='' className='profile-link'>
                             <span className='profile'>Hello, Sign in</span>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

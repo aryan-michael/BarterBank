@@ -1,15 +1,19 @@
 .root-container {
-    justify-content: center;
-    align-items: center;
-
-    .nav-container {}
+    // justify-content: center;
+    // align-items: center;
 
     .card-container {
         margin: 20px;
-        align-items: center;
+        //align-items: center;
         display: grid;
-        justify-content: center;
+        //justify-content: center;
         gap: 2.5rem;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 33.3%);
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .card-container {
+            grid-template-columns: repeat(1, 25%);
+        }
     }
 }
