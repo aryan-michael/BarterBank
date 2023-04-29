@@ -27,8 +27,27 @@ const bull = (
 );
 
 export default function ProfilePageButton(props: Props) {
+
+    const boxSX = {
+        width: 300,
+        boxShadow: '6',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 2,
+        margin: "20px",
+        "&:hover": {
+            border: "1px solid lightgray",
+            boxShadow: '20',
+            cursor: 'pointer',
+        },
+    };
+
+    const handleProfilePageButtonClick = () => {
+        console.log("thik hai bhai")
+    }
+
     return (
-        <Card sx={{ width: 300, boxShadow: '6', alignItems: 'center', justifyContent: 'center', borderRadius: 2 }}>
+        <Card onClick={handleProfilePageButtonClick} sx={boxSX}>
             <div className='sub'>
                 <img className='image' src={props.image} alt="image" />
             </div>
