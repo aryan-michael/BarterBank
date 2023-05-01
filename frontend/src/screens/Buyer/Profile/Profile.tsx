@@ -1,10 +1,10 @@
-import NavBar from "../../components/NavBar/NavBar"
-import ProfilePageButton from "../../components/Buttons/ProfilePage/ProfilePageButton"
-import settings from '../../images/settings.gif';
-import orders from '../../images/orders.gif';
-import returns from '../../images/returns.gif';
-import address from '../../images/address.gif';
-import contact from '../../images/contact.gif';
+import NavBar from "../../../components/NavBar/NavBar"
+import ProfilePageButton from "../../../components/Buttons/ProfilePage/ProfilePageButton"
+import settings from '../../../images/settings.gif';
+import orders from '../../../images/orders.gif';
+import returns from '../../../images/returns.gif';
+import address from '../../../images/address.gif';
+import contact from '../../../images/contact.gif';
 
 
 
