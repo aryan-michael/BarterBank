@@ -1,6 +1,6 @@
 import './CreateAccount.scss';
-import TextInputField from '../../components/TextInputField/TextInputField';
-import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
+import TextInputField from '../../../components/TextInputField/TextInputField';
+import SubmitButton from '../../../components/Buttons/Submit/SubmitButton';
 import Divider from '@mui/material/Divider';
 import { useState } from 'react';
 import PersonIcon from '@mui/icons-material/Person';
@@ -10,8 +10,8 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBankLogo.png';
-import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
+import logo from '../../../images/BarterBankLogo.png';
+import PreLoginFooter from '../../../components/PreLoginFooter/PreLoginFooter';
 import { TextField } from '@mui/material';
 
 const CreateAccount = () => {

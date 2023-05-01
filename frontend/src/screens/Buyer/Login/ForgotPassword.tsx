@@ -1,10 +1,10 @@
-import TextInputField from '../../components/TextInputField/TextInputField';
-import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
+import TextInputField from '../../../components/TextInputField/TextInputField';
+import SubmitButton from '../../../components/Buttons/Submit/SubmitButton';
 import Divider from '@mui/material/Divider';
 import './ForgotPassword.scss';
 import PersonIcon from '@mui/icons-material/Person';
-import logo from '../../images/BarterBankLogo.png';
-import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
+import logo from '../../../images/BarterBankLogo.png';
+import PreLoginFooter from '../../../components/PreLoginFooter/PreLoginFooter';
 
 function ForgotPassword() {
 
