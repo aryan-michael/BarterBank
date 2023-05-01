@@ -12,7 +12,7 @@ import "./Profile.scss"
 
 const Profile = () => {
     return (
-        <div className="root-container">
+        <>
             <div>
                 <NavBar />
             </div>
@@ -42,7 +42,7 @@ const Profile = () => {
                 </div>
 
             </div>
-        </div>
+        </>
     )
 }
 

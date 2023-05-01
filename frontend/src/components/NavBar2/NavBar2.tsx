@@ -9,6 +9,7 @@ const NavBar2 = () => {
                     <a href='' className='link'> <span className='spans'>Deals</span></a>
                     <a href='' className='link'> <span className='spans'>Customer Service</span></a>
                     <a href='' className='link'> <span className='spans'>Coupons</span></a>
+                    <a href='/profile' className='link'> <span className='spans'>Profile</span></a>
                 </div>
             </div>
         </>

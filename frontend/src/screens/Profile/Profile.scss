@@ -1,17 +1,15 @@
-.root-container {
-    .box {
-        align-items: center;
-        justify-content: center;
+.box {
+    align-items: center;
+    justify-content: center;
 
-        .box-sub {
-            margin: 40px;
-            // margin-left: 115px;
-            // margin-right: 115px;
-            // align-items: center;
-            display: grid;
-            justify-content: center;
-            gap: 2.5rem;
-            grid-template-columns: repeat(3, 17.5%);
-        }
+    .box-sub {
+        margin: 40px;
+        // margin-left: 115px;
+        // margin-right: 115px;
+        // align-items: center;
+        display: grid;
+        justify-content: center;
+        gap: 2.5rem;
+        grid-template-columns: repeat(3, 17.5%);
     }
 }
