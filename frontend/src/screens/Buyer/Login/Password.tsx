@@ -1,5 +1,5 @@
-import TextInputField from '../../components/TextInputField/TextInputField';
-import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
+import TextInputField from '../../../components/TextInputField/TextInputField';
+import SubmitButton from '../../../components/Buttons/Submit/SubmitButton';
 import Divider from '@mui/material/Divider';
 import './Password.scss';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -7,9 +7,9 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBankLogo.png';
+import logo from '../../../images/BarterBankLogo.png';
 import Checkbox from '@mui/material/Checkbox';
-import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
+import PreLoginFooter from '../../../components/PreLoginFooter/PreLoginFooter';
 
 function Password() {
 

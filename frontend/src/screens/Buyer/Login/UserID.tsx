@@ -1,13 +1,13 @@
-import TextInputField from '../../components/TextInputField/TextInputField';
-import SubmitButton from '../../components/Buttons/Submit/SubmitButton';
-import RegistrationButton from '../../components/Buttons/Register/RegistrationButton';
+import TextInputField from '../../../components/TextInputField/TextInputField';
+import SubmitButton from '../../../components/Buttons/Submit/SubmitButton';
+import RegistrationButton from '../../../components/Buttons/Register/RegistrationButton';
 import Divider from '@mui/material/Divider';
 import './UserID.scss';
 import PersonIcon from '@mui/icons-material/Person';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate } from 'react-router-dom';
-import logo from '../../images/BarterBankLogo.png';
-import PreLoginFooter from '../../components/PreLoginFooter/PreLoginFooter';
+import logo from '../../../images/BarterBankLogo.png';
+import PreLoginFooter from '../../../components/PreLoginFooter/PreLoginFooter';
 
 function UserID() {
 

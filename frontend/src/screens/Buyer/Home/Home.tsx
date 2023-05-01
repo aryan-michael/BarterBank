@@ -9,7 +9,10 @@ function Home() {
                     <h1>Go to Login Page</h1>
                 </Link>
                 <div />
-                <Link to={`/dashboard`}>
+                <Link to={`/dashboard/buyer`}>
+                    <h1>Go to Dashboard</h1>
+                </Link>
+                <Link to={`/dashboard/seller`}>
                     <h1>Go to Dashboard</h1>
                 </Link>
             </div>
