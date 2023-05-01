@@ -13,6 +13,13 @@
         align-items: center;
         justify-content: space-between;
 
+        .logo {
+            &:hover {
+                border: 1px solid white;
+                border-radius: 5px;
+            }
+        }
+
         .dropdowns {
             display: flex;
             padding: 0.5rem;
